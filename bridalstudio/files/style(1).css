@@ -1183,8 +1183,8 @@ input {
     }
 
     .boldRowInner.btTableRow>.rowItem {
-        display: table-cell;
-        float: none;
+        /* display: table-cell;
+        float: none; */
     }
 
     .btTopVertical {
@@ -1291,7 +1291,8 @@ input {
 }
 
 .bottomSmallSpaced {
-    padding-bottom: 20px; border: none !important;
+    padding-bottom: 20px;
+    border: none !important;
 }
 
 .bottomSemiSpaced {
@@ -10293,11 +10294,14 @@ html.touch .btShowTitle {
 .header.medium h2,
 .header.medium h3 {
     font-size: 25px;
-    margin: 0 0 11px; color:#222;
+    margin: 0 0 11px;
+    color: #222;
 }
-.btText p{
+
+.btText p {
     color: #444;
 }
+
 .header.medium .btSuperTitle,
 .header.medium .btSubTitle {
     font-size: 16px;
@@ -29069,7 +29073,7 @@ em {
 }
 
 .login-page {
-   
+
     position: relative;
 }
 
@@ -29079,11 +29083,19 @@ em {
     right: 0;
     width: 470px;
     height: 100%;
-    background: url('../files/login.png') no-repeat;
+    background: url('../images/login.png') no-repeat;
+}
+
+.dark-mode .login-page {
+    background: #fff;
+}
+
+.dark-mode .loh {
+    background: #5c5c5c;
 }
 
 .loh {
-     background: #e8f6ff;
+    background: #e8f6ff;
     padding: 50px;
     width: 100%;
     float: left;
@@ -29105,78 +29117,436 @@ em {
     color: #fff !important;
 }
 
-@media (max-width: 780px) {
-    .btt, .login-page::before {
-        display: none;
-    }
+.log-btn {
+    background: #62296c;
+    color: #fff !important;
+    padding: 0px 20px !important;
+    border-radius: 33px;
+    line-height: 40px;
+}
 
-    .boldSection .btCircleImage {
-        border-radius: 0
-    }
-    .topSemiSpaced, .bottomSemiSpaced{
-        padding:0;
-    }
-    .btIco.btIcoBigSize.btIcoDefaultType, .btIco.btIcoBigSize.btIcoDefaultType .btIcoHolder:before, .btIco.btIcoBigSize.btIcoDefaultType .btIcoHolder:after{
-        font-size: 45px;
-    }
-     p, .obj-p{
-        font-size: 15px;
-    }
-    .copyLine{
-        font-size: 13px;
-    }
-    .btIco.btIcoBigSize .btIcoHolder em {
-    font-size: 31px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+.menuPort nav ul li .log-btn:hover {
+    color: #fff !important;
 }
+
+.log-btt {
+    margin-top: 6px !important;
 }
+
+.dir-ico {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+.toogle-bt {
+    background: #dcdcdc;
+    padding: 7px 10px !important;
+    border-radius: 20px;
+    line-height: 15px !important;
+    margin-top: 7px !important;
+    padding-top: 0 !important;
+}
+
+.toogle-bt button {
+    border: none;
+    background: none;
+    margin: 0 2px;
+}
+
+.toogle-bt button svg {
+    top: 6px;
+    position: relative;
+}
+
+.toogle-bt button span {
+    font-size: 12px;
+}
+
+.toogl-ri {
+    border-right: 1px solid #222 !important;
+    padding-right: 5px;
+}
+
+/* .dark-mode {
+  background-color: black;
+  color: white;
+} */
+.dark-mode .topBar {
+    background: #5b2c69;
+}
+
+.dark-mode .btIconWidgetTitle,
+.dark-mode .btIconWidgetText {
+    color: #fff !important;
+}
+
+.dark-mode .btIconWidgetIcon .btIco {
+    background: #fff;
+    border-radius: 50%;
+}
+
+.dark-mode .btSearchInner input::placeholder {
+    color: #fff;
+    opacity: 1;
+    /* Needed for Firefox */
+}
+
+.dark-mode .topBarInMenu .widget_search button::before {
+    color: #fff !important;
+}
+
+.dark-mode .btMenuHorizontal.btLightSkin .btSearch:before,
+.dark-mode .btMenuHorizontal.btDarkSkin .btLightSkin .btSearch:before {
+    border-left: 1px solid rgb(243 243 243 / 10%);
+    border-right: 1px solid rgb(254 254 254 / 10%);
+}
+
+.dark-mode.btMenuHorizontal .mainHeader {
+    background: #000000bf;
+}
+
+.dark-mode .menuPort nav ul li a {
+    color: #fff !important;
+}
+
+.dark-mode .hero-overlay {
+    background: #00000080;
+}
+
+.dark-mode .btPageWrap {
+    background: #4c4c4c;
+}
+
+.dark-mode .bold11 {
+    color: #ccc;
+}
+
+.dark-mode .header.small h3,
+.dark-mode .header.small h4,
+.dark-mode .btText p {
+    color: #fff;
+}
+
+.dark-mode .h-port {
+    background-image: none;
+    /* background: #62296c;  */
+    color: #eee
+}
+
+.toogl-ri1 {
+    top: 6px;
+    position: relative;
+}
+
+.dark-mode.btMenuHorizontal.btStickyHeaderActive.btLightSkin .mainHeader {
+    background-color: rgb(16 16 16 / 95%);
+}
+
+.dark-mode .headline b.animate {
+    color: #6e6d6e;
+}
+
+.dark-mode .header.extralarge .btSubTitle {
+    color: #b9b9b9;
+}
+
+.dark-mode #bt_section6744f32853d7f {
+    background-color: #424242 !important;
+}
+
+.dark-mode #bt_section674394d76c33b {
+    position: relative !important;
+}
+
+.dark-mode #bt_section674394d76c33b::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d6;
+}
+
+.dark-mode #bt_section674394d76c33b header .btSuperTitle,
+.dark-mode #bt_section674394d76c33b header h1 {
+    color: #fff;
+}
+
+.dark-mode #bt_section674394d767531 {
+    background-image: none !important;
+    background-color: #3f3f3f !important;
+}
+
+.dark-mode #bt_section6744f32853d7f .bold11 {
+    background-color: #ffffff96;
+}
+
+.dark-mode #bt_section6744f64d9c481 {
+    position: relative;
+}
+
+.dark-mode #bt_section6744f64d9c481::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #00000070;
+}
+
+.dark-mode #bt_section6744f64d9de88 {
+    background: #9b9b9b !important;
+}
+
 .hero-slider {
-  position: relative;
+    position: relative;
 }
 
 .hero-slider .carousel-item {
-  height: 100vh;
+    height: 100vh;
 }
 
 .hero-slider img {
-  height: 100vh;
-  object-fit: cover;
+    height: 100vh;
+    object-fit: cover;
 }
 
 /* Overlay content */
 .hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  color: #fff;
-  max-width: 500px;
-  background: #00000080;
-  padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 500px;
+    background: #b9b9b980;
+    padding: 20px;
+}
+
+.new-heroo .hero-overlay {
+    background: #5b2c6970;
+    left: 35%;
+}
+
+.dark-mode .new-heroo .hero-overlay {
+    background: #000000c7;
+}
+
+.new-desg .dash h3::after {
+    box-shadow: none;
+}
+
+.newpadd {
+    padding-bottom: 30px;
+    background: #5b2c6969;
+}
+
+.h2imag img,
+.new-log-img img {
+    height: 440px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-radius: 20px;
+    transition: all ease .5s;
+}
+
+.h2imag img:hover,
+.new-log-img img:hover {
+    transform: rotate(20deg);
+    transition: all ease .5s;
+}
+
+.new-gal {
+    background: #00000038;
+}
+
+.m-t-20 {
+    margin-top: 40px;
+}
+
+.contact-sidebar {
+    background: #62296c;
+    border-radius: 40px;
+    text-align: center;
+    padding: 40px 25px 0;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+.contact-info-image {
+    width: 100%;
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+.contact-sidebar .contact-info-image img {
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+.contact-info-content p {
+    color: #fff;
+    opacity: 64%;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-info-content h3 {
+    color: #eee;
+    opacity: 65%;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 50px;
+}
+
+.new-logd::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000e3;
+}
+
+.new-logd header,
+.new-logd header .headline em {
+    color: #fff;
 }
 
 .hero-overlay h1 {
-  font-size: 60px;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold; color: #fff;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: .4px;
 }
 
 .hero-overlay p {
-  font-size: 20px;
-  margin: 15px 0;
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 /* Button style */
 .btn-gold {
-  background: #d4af37;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 30px;
-  text-decoration: none;
+    background: #d4af37;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
 .btn-gold:hover {
-  background: #b8962e;
+    background: #b8962e;
+}
+
+@media (max-width: 780px) {
+    .new-heroo .hero-overlay {
+        left: 2%;
+    }
+
+    #bt_section674394d7659a2 {
+        margin-top: 0 !important;
+    }
+
+    .boldSection .btCircleImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 30px;
+    }
+
+    .dark-mode.btMenuVertical.btLightSkin .menuPort {
+        background-color: #3a3737 !important;
+    }
+
+    .dark-mode.btLightSkin .btVerticalMenuTrigger .btIco:before,
+    .dark-mode .btLightSkin .btVerticalMenuTrigger .btIco:after {
+        border-top-color: #c4c3c3 !important;
+    }
+
+    .dark-mode.btLightSkin .btVerticalMenuTrigger .btIco:before,
+    .dark-mode.btLightSkin .btVerticalMenuTrigger .btIco:after {
+        border-top-color: #c4c3c3 !important;
+    }
+
+    .menuHolder .logo {
+        float: right;
+    }
+
+    .btt,
+    .login-page::before,
+    .new-log-img,
+    .contact-info-image {
+        display: none;
+    }
+
+    .icon-box {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-box img {
+        max-width: 100%;
+    }
+
+    .contact-sidebar {
+        padding: 20px;
+    }
+
+    .header.medium {
+        float: left;
+        margin-right: 20px;
+    }
+    .new-desg .btText{
+        float: left;
+    }
+.newpadd{
+    padding: 15px 0;
+}
+    .boldSection .btCircleImage {
+        border-radius: 0
+    }
+
+    .topSemiSpaced,
+    .bottomSemiSpaced {
+        padding: 0;
+    }
+
+    .btIco.btIcoBigSize.btIcoDefaultType,
+    .btIco.btIcoBigSize.btIcoDefaultType .btIcoHolder:before,
+    .btIco.btIcoBigSize.btIcoDefaultType .btIcoHolder:after {
+        font-size: 45px;
+    }
+
+    p,
+    .obj-p {
+        font-size: 15px;
+    }
+
+    .copyLine {
+        font-size: 13px;
+    }
+
+    .btIco.btIcoBigSize .btIcoHolder em {
+        font-size: 31px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
 }
